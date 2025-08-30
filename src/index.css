@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --color-brand-background: #0b0c10;
+    --color-brand-surface: #121318;
+    --color-brand-muted-surface: #171923;
+    --color-brand-text: #e6e6e6;
+    --color-brand-muted: #a9b0c0;
+    --color-brand-border: #222532;
+    --color-brand-accent: #7c4dff;
+    --color-brand-accent-2: #00d0c6;
+    --color-brand-ok: #2ecc71;
+    --color-brand-danger: #ff5c5c;
+    --color-brand-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+}
+
+@layer base {
+    body {
+        margin: 0; /* remove todas as margens padrão */
+        background: linear-gradient(180deg, var(--color-brand-background), var(--color-brand-muted-surface));
+        color: var(--color-brand-text); /* define a cor padrão para textos */
+        font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto; /* define as propriedades padrão da fonte */
+        min-height: 100dvh; /* define que o body deve ocupar toda a tela disponível */
+    }
+}
